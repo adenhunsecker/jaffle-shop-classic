@@ -40,9 +40,7 @@ models:
         constraints:
           - type: primary_key
         tests:
-          - unique:
-            config:
-              severity: warn
+          - unique
           - not_null
         description: This is a unique identifier for an order
 
