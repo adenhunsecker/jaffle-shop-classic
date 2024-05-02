@@ -29,9 +29,7 @@ models:
         constraints:
           - type: primary_key
         tests:
-          - unique:
-              config:
-                severity: warn
+          - unique
           - not_null
       - name: payment_method
         tests:
