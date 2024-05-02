@@ -13,7 +13,7 @@ models:
           - unique
           - not_null
             # config:
-            #     severity: warn
+            #     severity: not-warn
 
       - name: first_name
         description: Customer's first name. PII.
