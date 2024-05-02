@@ -7,13 +7,13 @@ models:
     columns:
       - name: customer_id
         description: This is a unique identifier for a customer
-        # constraints:
-        #   - type: primary_key
+        constraints:
+          - type: primary_key
         tests:
           - unique
-          - not_null
-            # config:
-            #     severity: not-warn
+          - not_null:
+            config:
+                severity: warn
 
       - name: first_name
         description: Customer's first name. PII.
