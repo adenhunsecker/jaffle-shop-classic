@@ -24,7 +24,7 @@ def check_primary_keys(file_paths):
             
                 if has_keys == False:
                     print(f'No primary key fround for model: {model_name}')
-                    sys.exit(6) #exit with 1 for fail
+                    sys.exit(6) #exit with anything other than 0 for fail
     print('All models include at least one primary key')
     sys.exit(0) # exit with 0 for success 
 
