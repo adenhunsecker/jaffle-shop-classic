@@ -23,7 +23,7 @@ jobs:
           pip install pyyaml 
 
       - name: Run primary key check
-        run: python3 github_action_scripts/check_primary_keys.py
+        run: python3 github_actions_scripts/check_primary_keys.py
 
       - name: warn_check
         run: |
