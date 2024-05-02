@@ -27,7 +27,7 @@ jobs:
 
       - name: warn_check
         run: |
-          if grep -q 'severity: warn' models/schema.yml models/staging.yml; then
+          if grep -q 'severity: warn' models/schema.yml models/staging/schema.yml; then
             echo "Test set to warn. Please upgrade test severity or remove test. 'they'll just be ignored anyway'"
             exit 1
           fi
