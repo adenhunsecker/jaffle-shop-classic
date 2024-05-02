@@ -24,9 +24,9 @@ def check_primary_keys(file_paths):
             
                 if has_keys == False:
                     print(f'No primary key fround for model: {model_name}')
-                    sys.exit(6) #exit with anything other than 0 for a fail
+                    sys.exit(6) #exit with 1 for fail
     print('All models include at least one primary key')
-    sys.exit(1)
+    sys.exit(0) # exit with 0 for success 
 
 # Paths to any schema files in the repo to be checked
 file_paths = ['models/staging/schema.yml', 'models/schema.yml']
