@@ -11,9 +11,9 @@ models:
           - type: primary_key
         tests:
           - unique
-          - not_null:
-            config:
-                severity: warn
+          - not_null
+            # config:
+            #     severity: warn
 
       - name: first_name
         description: Customer's first name. PII.
